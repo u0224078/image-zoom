@@ -1,0 +1,45 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.original{
+    margin-right: 4em;
+}
+
+.original, .zoomed{
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.original img{
+    max-height: 300px;
+    width: auto;
+}
+
+.zoomed img{
+    height: 600px;
+    position: relative;
+}
+
+.mark {
+    opacity: .3;
+    border: 6px dotted #fff;
+    background: #eee;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+aside {
+    position: absolute;
+    right: 0;
+    max-width: 30%;
+}
+
+.container-fluid{
+    margin: 0 .5em;    
+    padding: 0;
+}
