@@ -114,10 +114,10 @@ angular
   .controller('ImageZoomController', ['$sce', function($sce){
     this.images = [{
       name: "Duck.jpg",
-      url: 'img/duck.jpg'
+      url: './img/duck.jpg'
     },{
       name: "Moon.jpg",
-      url: "img/moon.jpg"
+      url: "./img/moon.jpg"
     }];
 
     this.addImage = function(){
