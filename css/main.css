@@ -2,8 +2,8 @@ html, body {
     margin: 0;
     padding: 0;
 }
-.original{
-    margin-right: 4em;
+.zoomed{
+    margin-left: 4em;
 }
 
 .original, .zoomed{
