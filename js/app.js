@@ -85,7 +85,7 @@ angular
 
 
       attrs.$observe('zoomLvl', function(data) {
-        scope.zoomLvl = data;
+        scope.zoomLvl =  data;;
       }, true);
     }
 
@@ -101,7 +101,7 @@ angular
         '<div class="original">',
           '<img src="{{src}}"/>',
         '</div>',
-        '<div class="zoomed  ng-cloak" ng-cloak>',
+        '<div class="zoomed">',
           '<img/>',
         '</div>'
       ].join(''),
@@ -112,6 +112,8 @@ angular
 angular
   .module('imageZoomApp')
   .controller('ImageZoomController', ['$sce', function($sce){
+    this.zoomLvl = 4;
+
     this.images = [{
       name: "Duck.jpg",
       url: './img/duck.jpg'
@@ -131,5 +133,4 @@ angular
       this.name = '';
       this.url = '';
     }
-
   }]);
