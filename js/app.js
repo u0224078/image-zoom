@@ -94,12 +94,12 @@ angular
       scope: {
         markHeight: '@markHeight',
         markWidth: '@markWidth',
-        src: '@ngSrc', 
+        src: '@src', 
         zoomLvl: "@zoomLvl"
       },
       template: [
         '<div class="original">',
-          '<img src="{{src}}"/>',
+          '<img ng-src="{{src}}"/>',
         '</div>',
         '<div class="zoomed">',
           '<img/>',
